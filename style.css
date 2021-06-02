@@ -76,12 +76,17 @@ nav {
 
 @media screen and (min-width: 768px) {
 
-    a {
-        display: block;
+    #navigation {
+        display: flex;
         flex-direction: row;
-        margin-bottom: 10px;
         font-weight: 100;
         color: #69696a;
         text-decoration: none;
+    }
 
+    .dot1 {
+        color:  rgba(247, 136, 167, 0.6);
+        width: 50px;
+        height: 50px;
+    }
 }
