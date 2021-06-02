@@ -4,9 +4,20 @@ body {
     color: #000;
 }
 
-.navigation {
+li {
+    list-style: none;
+}
+
+.top {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    margin-left: -31px;
+    
+}
+
+#special {
+    margin-bottom: 10px;
 }
 
 header {
@@ -17,6 +28,11 @@ header {
     margin-bottom: 10px;
 }
 
+button {
+    background: none;
+    border: none;
+    color: #FFF;
+}
 
 .button1 {
     color: #FFF;
@@ -25,6 +41,7 @@ header {
     border-radius: 50px;
     margin-left: 20px;
     margin-right: 20px;
+    margin: auto;
     text-align: center;
     width: 350px;
     height: 35px;
@@ -67,45 +84,40 @@ p {
     font-size: smaller;
 }
 
-#footer {
-    background: rgba(247, 193, 162, 0.7);
-    position: fixed;
-    bottom: 0; left: 0; right: 0; 
-    height: 30px;
-    text-align: justify;
-}
-
-h2 {
-    margin-top: 7px;
-    margin-left: 15px;
-    font-size: small;
-}
-
-li {
-    display: inline;
-    float: right;
-}
-
 nav {
-    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 400px;
+    margin-bottom: 0px;
+    background-color: rgba(247, 193, 162, 0.7);
+    position: fixed;
+    height: 50px;
+    padding: 0;
+
 }
+
+.different {
+    margin: auto;
+    
+}
+
 
 @media screen and (min-width: 768px) {
 
-    .navigation {
+    .top {
         display: flex;
         flex-direction: row;
-        justify-content: baseline;
-        flex-wrap: wrap;
-        margin-top: 0px;
-        font-weight: 100;
-        color: #69696a;
-        text-decoration: none;
+        justify-content:flex-end;
+        align-items: center;
+        margin-left: auto:
     }
 
-    header {
-        margin-right: 410px;
+    #special {
+        margin-right: auto;
     }
+
+   
 
     ul {
         display: flex;
@@ -122,9 +134,14 @@ nav {
         height: 50px;
     }
 
+    .circles {
+        display: flex;
+    }
+
     .dot1 {
-        color:  rgba(247, 136, 167, 0.6);
-        width: 50px;
-        height: 50px;
+        height: 25px;
+        width: 25px;
+        background-color: rgba(247, 136, 167, 0.6);
+        border-radius: 50%;
     }
 }
