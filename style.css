@@ -4,6 +4,11 @@ body {
     color: #000;
 }
 
+.navigation {
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     font-style: bold;
     color: #000;
@@ -13,7 +18,7 @@ header {
 }
 
 
-button {
+.button1 {
     color: #FFF;
     border: none;
     background-color: #000;
@@ -23,7 +28,18 @@ button {
     text-align: center;
     width: 350px;
     height: 35px;
+}
 
+.button2 {
+    color: #FFF;
+    border: none;
+    background-color: #000;
+    border-radius: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    width: 350px;
+    height: 35px;
 }
 
 a {
@@ -76,12 +92,34 @@ nav {
 
 @media screen and (min-width: 768px) {
 
-    #navigation {
+    .navigation {
         display: flex;
         flex-direction: row;
+        justify-content: baseline;
+        flex-wrap: wrap;
+        margin-top: 0px;
         font-weight: 100;
         color: #69696a;
         text-decoration: none;
+    }
+
+    header {
+        margin-right: 410px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 0px;
+    }
+
+    a {
+        margin-inline-start: 10px;
+    }
+
+    .button1 {
+        width: 50px;
+        height: 50px;
     }
 
     .dot1 {
