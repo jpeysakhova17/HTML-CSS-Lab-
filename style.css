@@ -13,11 +13,12 @@ li {
     flex-direction: column;
     justify-content: flex-end;
     margin-left: -31px;
-    
+    color: #69696a;
 }
 
 #special {
     margin-bottom: 10px;
+    color: #000;
 }
 
 header {
@@ -35,7 +36,21 @@ button {
 }
 
 .button1 {
-    color: #FFF;
+    color: #fff;
+    border: none;
+    background-color: #000;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin: auto;
+    text-align: center;
+    width: 350px;
+    height: 35px;
+}
+
+.button2 {
+    color:  #fff;
     border: none;
     background-color: #000;
     border-radius: 50px;
@@ -47,16 +62,10 @@ button {
     height: 35px;
 }
 
-.button2 {
-    color: #FFF;
+.button-text {
+    margin-top: 10px;
+    color: #fff;
     border: none;
-    background-color: #000;
-    border-radius: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
-    width: 350px;
-    height: 35px;
 }
 
 a {
@@ -79,6 +88,8 @@ p {
     position: relative;
     padding-left: 10px;
     margin-left: 5px;
+    margin-bottom: 5px;
+    margin: auto;
     text-align: left;
     color: #69696a;
     font-size: smaller;
@@ -94,12 +105,18 @@ nav {
     position: fixed;
     height: 50px;
     padding: 0;
+    color: #69696a;
 
 }
 
 .different {
     margin: auto;
-    
+    color: #000;
+}
+
+#footer {
+    display: flex;
+    justify-content: flex-end;
 }
 
 
@@ -108,16 +125,15 @@ nav {
     .top {
         display: flex;
         flex-direction: row;
-        justify-content:flex-end;
-        align-items: center;
-        margin-left: auto:
+        justify-content: flex-end;
+        align-items: flex-end;
+        column-gap: 10px;
     }
 
     #special {
         margin-right: auto;
     }
 
-   
 
     ul {
         display: flex;
@@ -126,7 +142,15 @@ nav {
     }
 
     a {
-        margin-inline-start: 10px;
+        margin-left: auto;
+    }
+
+    h1 {
+        margin-top: 161px;
+    }
+
+    p {
+        margin-right: 50%;
     }
 
     .button1 {
@@ -134,14 +158,40 @@ nav {
         height: 50px;
     }
 
-    .circles {
-        display: flex;
+    .button2 {
+        width: 50%;
     }
 
-    .dot1 {
-        height: 25px;
-        width: 25px;
-        background-color: rgba(247, 136, 167, 0.6);
-        border-radius: 50%;
+    #circle1 {
+        width: 230px;
+        height: 230px;
+        border-radius: 200px;
+        background: rgba(247, 136, 167, 0.6);
+        opacity: 0.9;
+        position: absolute;
+        left: 950px;
+        top: 181px;
+    }
+    
+    #circle2 {
+        width: 180px;
+        height: 180px;
+        border-radius: 100px;
+        background: rgba(247, 193, 162, 0.7);
+        opacity: 0.8;
+        position: absolute;
+        left: 1080px;
+        top: 326px;
+    }
+
+    #circle3 {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        background: rgba(207, 130, 213, 0.6);
+        opacity: 0.9;
+        position: absolute;
+        left: 1131px;
+        top: 250px;
     }
 }
