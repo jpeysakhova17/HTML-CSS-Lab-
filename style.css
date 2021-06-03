@@ -116,16 +116,23 @@ nav {
     color: #000;
 }
 
-#footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-top: auto;
-    height: 35px;
+footer {
     position: fixed;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px;
+    background-color: rgba(247, 193, 162, 0.7);
+
 }
+
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+
 
 
 @media screen and (min-width: 768px) {
@@ -201,5 +208,9 @@ nav {
         position: absolute;
         left: 1131px;
         top: 250px;
+    }
+
+    footer ul {
+        flex-direction: row;
     }
 }
